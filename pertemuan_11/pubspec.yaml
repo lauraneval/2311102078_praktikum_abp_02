@@ -1,0 +1,63 @@
+name: aventuria_store
+description: A vintage adventurer supply store app using Cubit.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ─── Product Image Assets ───────────────────────────────────────────────────
+  # 1. Create the directory: assets/images/products/
+  #
+  # 2. Add five PNG images (1:1 ratio recommended, min 200×200 px):
+  #      assets/images/products/oak_wand.png      — ornate fantasy wand
+  #      assets/images/products/iron_axe.png      — ornate fantasy axe
+  #      assets/images/products/spellbook.png     — ornate spellbook / tome
+  #      assets/images/products/potion.png        — ornate potion bottle
+  #      assets/images/products/silver_ring.png   — ornate ring / jewellery
+  #
+  #    Style reference: items floating on a soft watercolour splash,
+  #    transparent background (PNG), similar to the Me.Mimic trading-card style.
+  #    Recommended sources: game-art packs on itch.io, Midjourney / DALL-E
+  #    with prompt "ornate fantasy [item], watercolour, transparent background".
+  #
+  assets:
+    - assets/images/products/adaptive_armor.jpg
+    - assets/images/products/greatest_club.jpg
+    - assets/images/products/liquid_light.jpg
+    - assets/images/products/veilpiercer.jpg
+    - assets/images/products/wand_of_allergy.jpg
+
+  fonts:
+    - family: CormorantGaramond
+      fonts:
+        - asset: assets/fonts/CormorantGaramond-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/CormorantGaramond-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/CormorantGaramond-Bold.ttf
+          weight: 700
+  
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
